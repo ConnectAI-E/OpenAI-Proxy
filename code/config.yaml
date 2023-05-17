@@ -1,0 +1,5 @@
+# openai
+PORT: 9000
+TARGET: https://api.openai.com
+
+

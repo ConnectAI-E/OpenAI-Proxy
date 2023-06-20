@@ -7,7 +7,7 @@ s deploy
 
 ## 使用
 ```
-curl --location 'REVERSE_URL/v1/chat/completions' \
+curl --location 'YOUR_PROXY_URL/v1/chat/completions' \
 --header 'Authorization: Bearer YOUR_AUTHORIZATION' \
 --header 'Content-Type: application/json' \
 --data '{

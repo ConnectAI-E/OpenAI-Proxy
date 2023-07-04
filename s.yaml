@@ -1,5 +1,5 @@
 edition: 1.0.0
-name: ChatGPT-API-Proxy
+name: Claude-API-Proxy
 access: "aliyun" #  秘钥别名
 
 vars: # 全局变量
@@ -22,11 +22,11 @@ services:
     props: # 组件的属性值
       region: ${vars.region} # 关于变量的使用方法，可以参考：https://www.serverless-devs.com/serverless-devs/yaml#变量赋值
       service:
-        name: "ChatGPT-API-Proxy"
-        description: "ChatGPT-API-Proxy"
+        name: "Claude-API-Proxy"
+        description: "Claude-API-Proxy"
       function:
-        name: "openapi-proxy"
-        description: 'chatgpt api proxy'
+        name: "claude-proxy"
+        description: 'Claude api proxy'
         codeUri: './code'
         cAPort: 9000
         customRuntimeConfig:

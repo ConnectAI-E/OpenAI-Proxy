@@ -1,5 +1,5 @@
-# openai
+# claude
 PORT: 9000
-TARGET: https://api.openai.com
+TARGET: https://api.anthropic.com
 
 

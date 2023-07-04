@@ -56,7 +56,7 @@ func main() {
 	}
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		authFromHeader := removeBearer(r.Header.Get("Authorization"))
+		authFromHeader := r.Header.Get("x-api-key")
 		if authFromHeader == "" {
 			w.WriteHeader(401)
 			return
